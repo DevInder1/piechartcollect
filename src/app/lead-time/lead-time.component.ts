@@ -95,7 +95,7 @@ export class LeadTimeComponent implements OnInit {
         }
       },
       xAxis: {
-        categories: ['Order1', 'Order2', 'Order3', 'Order4']
+        categories: ['O10', 'O11', 'O12', 'O13']
       },
 
       series: [
@@ -147,7 +147,7 @@ export class LeadTimeComponent implements OnInit {
         }
       },
       xAxis: {
-        categories: ['Order1', 'Order2','order3','order4']
+        categories: ['O10', 'O11','O13','O14']
       },
 
       series: [{
@@ -185,12 +185,12 @@ export class LeadTimeComponent implements OnInit {
 
         type: 'column',
         name: 'Overall Lead Time',
-        data: [3,7,10,14,16,18,22,24,26,29,30,36]
+        data: [8,7,10,14,8,18,4,18,26,20,30,36]
       },
         {
           type: 'column',
           name: 'TP lead time',
-          data: [1,6,9,10,14,16,21,24,27,25,30,32]
+          data: [5,6,9,10,7,16,3,10,27,15,30,32]
         },
       ]
 

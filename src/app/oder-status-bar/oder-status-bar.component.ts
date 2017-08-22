@@ -11,8 +11,10 @@ export class OderStatusBarComponent implements OnInit {
   constructor() {
     this.orderstatusbar = {
       chart: {
-        type: 'column',
-       // backgroundColor:'rgba(0, 0, 0, 0.5',
+        type:'column',
+        borderWidth: 1,
+        plotBorderWidth: 1,
+        // backgroundColor:'rgba(0, 0, 0, 0.5',
 
         width: 800
       },
@@ -31,23 +33,27 @@ export class OderStatusBarComponent implements OnInit {
         }
       },
       xAxis: {
-        categories: ['August', 'May-July', 'Feb-Apr', 'Sep 2016- jan 2017']
+        categories: ['August', 'May-July', 'Feb-Apr', 'Sep 2016- Jan 2017']
       },
       yAxis: {
         min: 0,
         title: {
-          text: 'Break down in % of the various order status in bar chart'
+          text: ' Break down in % of the various order status in bar chart',
+          style: {
+            fontWeight: 'bold',
+            fontFamily: 'serif',
+          }
         }
       },
       /*legend: {
-        reversed: true,
+       reversed: true,
        // backgroundColor:(('rgba(0, 0, 0, 0.5)') || '#ffa3d2')
-      },*/
+       },*/
       plotOptions: {
         column: {
           stacking: 'normal',
-          dataLabels:{
-            enabled:false,
+          dataLabels: {
+            enabled: false,
 
           }
         }
@@ -56,7 +62,7 @@ export class OderStatusBarComponent implements OnInit {
         name: 'Draft',
         data: [15, 12, 2, 2]
       }, {
-        name: 'Accepted or Submitted',
+        name: 'Accepted-Submitted',
         data: [12, 2, 1, 1]
       }, {
         name: 'Confirmed',
