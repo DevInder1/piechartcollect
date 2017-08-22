@@ -13,6 +13,8 @@ import { LeadTimeAverageComponent } from './lead-time-average/lead-time-average.
 import { SemiDonutComponent } from './semi-donut/semi-donut.component';
 import { LeadTimeComponent } from './lead-time/lead-time.component';
 import {HighchartsStatic} from "angular2-highcharts/dist/HighchartsService";
+import { AreaShipmentComponent } from './area-shipment/area-shipment.component';
+
 /*declare var require;*/
 
 @NgModule({
@@ -23,7 +25,9 @@ import {HighchartsStatic} from "angular2-highcharts/dist/HighchartsService";
     OderStatusBarComponent,
     LeadTimeAverageComponent,
     SemiDonutComponent,
-    LeadTimeComponent
+    LeadTimeComponent,
+    AreaShipmentComponent,
+
   ],
   imports: [
     BrowserModule,

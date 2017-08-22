@@ -77,7 +77,7 @@ export class LeadTimeComponent implements OnInit {
 
      }*/
     this.oderwise = {
-      chart:{
+      chart: {
 
       },
       title: {
