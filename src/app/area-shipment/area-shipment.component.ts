@@ -14,7 +14,7 @@ export class AreaShipmentComponent implements OnInit {
         type: 'area'
       },
       title: {
-        text: 'History of Orders and Shipment'
+        text: 'History of Orders and shipped '
       },
       legend: {
         enabled: true,
@@ -34,7 +34,7 @@ export class AreaShipmentComponent implements OnInit {
         min: 0,
       },
       tooltip: {
-        pointFormat:'{series.name}'
+        pointFormat:'{series.name} <b> {point.y}'
       },
       plotOptions: {
         area:  {
@@ -54,9 +54,13 @@ export class AreaShipmentComponent implements OnInit {
         name: 'Total Orders',
         data: [20, 24, 25, 28, 32, 36, 45, 50, 55, 60, 65, 70]
       }, {
-        name: 'Shipment',
+        name: 'Shipped',
         data: [5, 12, 15, 17, 18, 25, 28, 30, 31, 32, 33, 40]
-      }]
+      },
+        {
+          name: 'with sample',
+          data: [4, 12, 10, 16, 10, 23, 21, 28, 30, 12, 30, 40]
+        }]
     }
   }
 

@@ -22,7 +22,7 @@ export class OrderStatusComponent implements OnInit {
         height: 400,
       },
       title: {
-        text: '1 Month Data(1 August -16 August)'
+        text: 'Current Month'
       },
       tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'

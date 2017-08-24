@@ -12,11 +12,11 @@ export class OderStatusBarComponent implements OnInit {
     this.orderstatusbar = {
       chart: {
         type:'column',
-        borderWidth: 1,
-        plotBorderWidth: 1,
+       /* borderWidth: 1,
+        plotBorderWidth: 1,*/
         // backgroundColor:'rgba(0, 0, 0, 0.5',
 
-        width: 800
+        //width: 1100
       },
       title: {
         text: ''
@@ -38,7 +38,7 @@ export class OderStatusBarComponent implements OnInit {
       yAxis: {
         min: 0,
         title: {
-          text: ' Break down in % of the various order status in bar chart',
+          text: '',
           style: {
             fontWeight: 'bold',
             fontFamily: 'serif',

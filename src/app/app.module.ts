@@ -14,6 +14,7 @@ import { SemiDonutComponent } from './semi-donut/semi-donut.component';
 import { LeadTimeComponent } from './lead-time/lead-time.component';
 import {HighchartsStatic} from "angular2-highcharts/dist/HighchartsService";
 import { AreaShipmentComponent } from './area-shipment/area-shipment.component';
+import { DonutDashboardComponent } from './donut-dashboard/donut-dashboard.component';
 
 /*declare var require;*/
 
@@ -27,6 +28,7 @@ import { AreaShipmentComponent } from './area-shipment/area-shipment.component';
     SemiDonutComponent,
     LeadTimeComponent,
     AreaShipmentComponent,
+    DonutDashboardComponent,
 
   ],
   imports: [

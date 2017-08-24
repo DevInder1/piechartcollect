@@ -78,16 +78,20 @@ export class LeadTimeComponent implements OnInit {
      }*/
     this.oderwise = {
       chart: {
-
+        // width: 1300
       },
       title: {
-        text: 'Break down of the lead time of individual orders for key status and desks '
+        text: "OEF Leadtime ",
+        style: {
+          fontWeight: 'bold',
+          fontFamily: 'serif',
+        }
       },
       legend: {
         enabled: true,
         layout: 'vertical',
         align: 'right',
-        width: 90,
+        width: 180,
         verticalAlign: 'middle',
         useHTML: true,
         labelFormatter: function () {
@@ -95,36 +99,57 @@ export class LeadTimeComponent implements OnInit {
         }
       },
       xAxis: {
-        categories: ['O10', 'O11', 'O12', 'O13']
+        categories: ['O100', 'O110', 'O120', 'O130']
       },
 
       series: [
         {
 
           type: 'column',
-          name: 'TotalLead',
+          name: 'OEF',
           data: [20, 16, 18, 12]
         }, {
 
           type: 'column',
-          name: 'Customer',
+          name: 'Customer ROM',
           data: [4, 1, 2, 4]
         },
         {
           type: 'column',
-          name: 'ROM',
-          data: [2, 1, 6, 5]
+          name: 'Support Desk ROM',
+          data: [5, 1, 2, 4]
+        },
+        {
+          type: 'column',
+          name: 'ROM Code',
+          data: [9, 2, 4, 8]
+        },
+        {
+          type: 'column',
+          name: 'Customer Fabkey',
+          data: [4, 6, 3, 4]
+        },
+        {
+          type: 'column',
+          name: 'Supportdesk Fabkey',
+          data: [2, 3, 1, 6]
         },
         {
           type: 'column',
           name: 'EEPROM',
-          data: [9, 6, 1, 4]
+          data: [6, 9, 4, 10]
         },
         {
           type: 'column',
           name: 'Engineering',
           data: [2, 2, 1, 1]
-        }, {
+        },
+        {
+          type: 'column',
+          name: 'Completion',
+          data: [4, 1, 9, 4]
+        },
+        {
           type: 'column',
           name: 'Shipment',
           data: [1, 2, 4, 3]
@@ -132,8 +157,15 @@ export class LeadTimeComponent implements OnInit {
 
     }
     this.overall = {
+      chart: {
+       // width: 1000
+      },
       title: {
-        text: 'Provide an option to switch between Overall Lead Time and TP lead time'
+        text: 'OEF Leadtime Comparision',
+        style: {
+          fontWeight: 'bold',
+          fontFamily: 'serif',
+        }
       },
       legend: {
         enabled: true,
@@ -147,24 +179,41 @@ export class LeadTimeComponent implements OnInit {
         }
       },
       xAxis: {
-        categories: ['O10', 'O11','O13','O14']
+        categories: ['O100', 'O111', 'O133', 'O144']
       },
 
       series: [{
         type: 'column',
-        name: 'Overall Lead Time',
-        data: [9,7,10,13]
+        name: 'OEF',
+        data: [9, 7, 10, 13]
       },
         {
           type: 'column',
-          name: ' TP lead time',
-          data: [4,3,8,12]
-        }]
+          name: ' TP',
+          data: [6, 10, 8, 12]
+        },
+        {
+          type: 'column',
+          name: 'ROM Code',
+          data: [3, 6, 6, 4]
+        },
+        {
+          type: 'column',
+          name: 'EEPROM',
+          data: [3, 4, 2, 8]
+        },]
 
     }
     this.monthwise = {
+      chart: {
+       // width: 1000
+      },
       title: {
-        text: 'Break down of the lead time of individual orders for key status and desks '
+        text: 'Average Lead Time ',
+        style: {
+          fontWeight: 'bold',
+          fontFamily: 'serif',
+        }
       },
       legend: {
         enabled: true,
@@ -178,19 +227,19 @@ export class LeadTimeComponent implements OnInit {
         }
       },
       xAxis: {
-        categories: ['January', 'February','March','April','May','June','July','August','September','October','November','December']
+        categories: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
       },
 
       series: [{
 
         type: 'column',
-        name: 'Overall Lead Time',
-        data: [8,7,10,14,8,18,4,18,26,20,30,36]
+        name: 'Overall',
+        data: [8, 7, 10, 14, 8, 18, 4, 18, 26, 20, 30, 36]
       },
         {
           type: 'column',
-          name: 'TP lead time',
-          data: [5,6,9,10,7,16,3,10,27,15,30,32]
+          name: 'TP',
+          data: [5, 6, 9, 10, 7, 16, 3, 10, 27, 15, 30, 32]
         },
       ]
 
